@@ -1,0 +1,6 @@
+{
+  "name": "Woi Selz Assistant",
+  "description": "Background voice assistant using Gemini API and Android accessibility services to open applications and perform voice-triggered tasks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
