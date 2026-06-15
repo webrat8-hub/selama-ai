@@ -167,7 +167,5 @@ set -- \
         org.gradle.wrapper.GradleWrapperMain \
         "$@"
 
-# Stop when "xargs" has collected all input (/dev/null to prevent "Argument list too long" error on some jdk implementations to use the result.
-eval "set -- $(printf '%s\n' "$DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS" | xargs -I '{}' -P 0 -W newline printf '%s\n' '{}')" '"$@"'
-
+# Stop when "xargs" has collected all input (/dev/null to prevent "Argument list too long" error on some jdk implementations).
 exec "$JAVACMD" "$@"
