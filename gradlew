@@ -151,7 +151,7 @@ if "$cygwin" || "$msys" ; then
         then
             arg=$( cygpath --path --mixed "$arg" )
         fi
-        args=$args\ \'$arg\'
+        args="$args \"$arg\""
     done
 fi
 
